@@ -12,20 +12,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="64dp" />
+        app:layout_constraintGuide_percent="0.30779755" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="64dp" />
+        app:layout_constraintGuide_percent="0.7" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/piedras"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,12 +35,11 @@
         android:id="@+id/regNombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         android:background="@color/tras"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:startIconDrawable="@drawable/person">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -53,12 +52,11 @@
         android:id="@+id/regMail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/regNombre"
-        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintTop_toBottomOf="@id/regNombre"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         android:background="@color/tras"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:startIconDrawable="@drawable/mail">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -71,12 +69,11 @@
         android:id="@+id/regPw"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/regMail"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintTop_toBottomOf="@id/regMail"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         android:background="@color/tras"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:endIconMode="password_toggle"
         app:startIconDrawable="@drawable/key">
 
@@ -90,13 +87,12 @@
         android:id="@+id/regPw2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/regPw"
-        app:layout_constraintVertical_bias="0.17"
+        app:layout_constraintTop_toBottomOf="@id/regPw"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:layout_marginTop="8dp"
         android:background="@color/tras"
         app:endIconMode="password_toggle"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:startIconDrawable="@drawable/key">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -116,19 +112,30 @@
         android:layout_marginLeft="80dp"
         android:backgroundTint="@color/paleta3"
         app:layout_constraintTop_toBottomOf="@id/regPw2"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="8dp">
 
     </com.google.android.material.button.MaterialButton>
 
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
+        android:id="@+id/imgCisneIzq"
+        android:layout_width="200dp"
         android:layout_height="130dp"
         android:layout_marginBottom="16dp"
-        android:contentDescription="@string/fotocisnes"
+        android:contentDescription="@string/fotocisneIzq"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cisne_izq" />
+
+    <ImageView
+        android:id="@+id/imageCisneDer"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/fotocisneIzq"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/cisnes" />
+        app:srcCompat="@drawable/cisne_der" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

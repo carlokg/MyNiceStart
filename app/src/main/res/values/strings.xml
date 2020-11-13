@@ -14,4 +14,5 @@
     <string name="regMail">Correo</string>
     <string name="regPw2">Confirmar contraseña</string>
     <string name="btnOk">aceptar</string>
+    <string name="fotocisneIzq">Cisne Izquierda</string>
 </resources>
