@@ -61,8 +61,7 @@
         android:text="@string/btnLogin"
         android:layout_marginRight="136dp"
         android:backgroundTint="@color/colorBtn"
-        app:layout_constraintTop_toBottomOf="@id/tilPw"
-        android:layout_marginEnd="136dp">
+        app:layout_constraintTop_toBottomOf="@id/tilPw">
 
     </com.google.android.material.button.MaterialButton>
 
@@ -83,14 +82,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="347dp" />
+        app:layout_constraintGuide_begin="65dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8442822" />
+        app:layout_constraintGuide_end="64dp" />
 
     <TextView
         android:layout_width="wrap_content"

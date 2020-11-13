@@ -7,4 +7,11 @@
     <string name="iconotienda">IconoTienda</string>
     <string name="register">have you got an account? Register</string>
     <string name="btnGuest">Guest</string>
+    <string name="fotocisnes">foto cisnes</string>
+    <string name="hint_correo">correo</string>
+    <string name="regNombre">Nombre</string>
+    <string name="regPw">Contraseña</string>
+    <string name="regMail">Correo</string>
+    <string name="regPw2">Confirmar contraseña</string>
+    <string name="btnOk">aceptar</string>
 </resources>

@@ -5,5 +5,12 @@
     <color name="colorAccent">#D9A796</color>
     <color name="white">#ffffff</color>
     <color name="whitec">#D0FFFFFF</color>
-    <color name="colorBtn">#F20530</color>
+    <color name="colorBtn">#F20519</color>
+    <color name="paleta1">#F20519</color>
+    <color name="paleta2">#F20530</color>
+    <color name="paleta3">#A60321</color>
+    <color name="paleta4">#D9A796</color>
+    <color name="tras">#77A60321</color>
+
+
 </resources>
