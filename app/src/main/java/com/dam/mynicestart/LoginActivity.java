@@ -18,4 +18,9 @@ public class LoginActivity extends AppCompatActivity {
         Intent i = new Intent(this, Registro.class);
         startActivity(i);
     }
+
+    public void btnLogin(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
 }

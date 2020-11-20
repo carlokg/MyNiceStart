@@ -9,15 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Registro"></activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".MainActivity2"
+            android:parentActivityName=".MainActivity"
+            ></activity>
+        <!--flecha retorno: android:parentActivityName=".MainActivity"-->
+        <activity android:name=".Registro"
+            android:theme="@style/NoActionThem"/>
+        <activity android:name=".SplashActivity"
+            android:theme="@style/NoActionThem">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".LoginActivity"
+            android:theme="@style/NoActionThem"/>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
