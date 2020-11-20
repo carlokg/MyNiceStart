@@ -5,6 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -12,6 +17,16 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        openApp(true);
+
+        ImageView mySubtitle = (ImageView) findViewById(R.id.imgElegance);
+        Animation elegance = AnimationUtils.loadAnimation(this, R.anim.fadeln);
+        mySubtitle.startAnimation(elegance);
+
+        View myfondo = (View) findViewById(R.id.fondo);
+        Animation fondo_splash = AnimationUtils.loadAnimation(this, R.anim.view_splash);
+        myfondo.startAnimation(fondo_splash);
 
         openApp(true);
     }

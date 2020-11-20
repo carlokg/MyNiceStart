@@ -103,13 +103,13 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogin"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         android:text="@string/btnOk"
-        android:layout_marginRight="80dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
         android:backgroundTint="@color/paleta3"
         app:layout_constraintTop_toBottomOf="@id/regPw2"
         android:layout_marginTop="8dp">
