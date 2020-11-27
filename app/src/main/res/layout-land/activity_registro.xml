@@ -7,6 +7,14 @@
     tools:context=".Registro"
     android:background="@color/paleta4">
 
+    <View
+        android:id="@+id/visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim"
+        />
+
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"

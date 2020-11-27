@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">MyNiceStart</string>
+    <string name="app_name">Elegance Spa</string>
     <string name="name">username</string>
     <string name="pw">password</string>
     <string name="btnLogin">LOGIN</string>
     <string name="fotogirl">fotoGirl</string>
     <string name="iconotienda">IconoTienda</string>
-    <string name="register">have you got an account? Register</string>
+    <string name="register">Have you got an account? Register</string>
     <string name="btnGuest">Guest</string>
     <string name="fotocisnes">foto cisnes</string>
     <string name="hint_correo">correo</string>

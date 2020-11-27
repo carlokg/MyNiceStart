@@ -10,8 +10,10 @@
     <color name="paleta2">#F20530</color>
     <color name="paleta3">#A60321</color>
     <color name="paleta4">#D9A796</color>
-    <color name="paleta44">#E8C5B9</color>
+    <color name="paleta44">#F3C7B8</color>
     <color name="tras">#97A60321</color>
-
+    <color name="paletaS1">#66F33D5E</color>
+    <color name="paletaS2">#66595250</color>
+    <color name="paletaB">#000000</color>
 
 </resources>

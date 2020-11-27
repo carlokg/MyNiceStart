@@ -16,7 +16,17 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/chica" />
+         />
+    <!-- app:srcCompat="@drawable/chica" -->
+
+    <View
+        android:id="@+id/visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim"
+
+        />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilUser"
@@ -27,7 +37,8 @@
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         android:background="@color/whitec"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:hintTextAppearance="@style/ccc">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -57,10 +68,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/btnGuest"
         android:text="@string/btnLogin"
-        android:layout_marginRight="136dp"
-        android:backgroundTint="@color/colorBtn"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        style="@style/ButtonStraight"
+
+
         app:layout_constraintTop_toBottomOf="@id/tilPw"
         android:onClick="btnLogin">
 
@@ -71,10 +84,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/btnGuest"
-        android:backgroundTint="@color/colorBtn"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@id/tilPw">
+        app:layout_constraintTop_toBottomOf="@id/tilPw"
+        style="@style/ButtonStraight">
 
     </com.google.android.material.button.MaterialButton>
 
@@ -95,15 +108,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        android:fontFamily="@font/fuente2"
+        android:onClick="register"
         android:text="@string/register"
-        android:textColor="@color/colorBtn"
-        android:textStyle="bold"
+        android:textColor="@color/whitec"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/guideline"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:onClick="register"/>
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,16 +2,32 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/paleta3</item>
+        <item name="colorPrimaryDark">@color/paleta4</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
     <style name="NoActionThem" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorPrimaryDark">@color/paletaB</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ButtonStraight"
+        parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/statelist</item>
+        <item name="cornerRadius">30dp</item>
+    </style>
+
+    <style name="ButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/statelist</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="strokeColor">@color/statelist</item>
+    </style>
+    <style name="ccc">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/paleta3</item>
+        <item name="colorControlHighlight">@color/paleta3</item>
+    </style>
 </resources>

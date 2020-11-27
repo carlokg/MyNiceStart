@@ -8,6 +8,7 @@
     android:background="@color/paleta4"
     tools:context=".LoginActivity">
 
+
     <View
         android:id="@+id/fondo"
         android:layout_width="match_parent"
@@ -15,6 +16,13 @@
         android:background="@color/paleta44"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <View
+        android:id="@+id/visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim"
         />
 
     <ImageView

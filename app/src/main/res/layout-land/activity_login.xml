@@ -18,6 +18,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chica" />
 
+    <View
+        android:id="@+id/visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim"
+        />
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilUser"
         android:layout_width="0dp"
