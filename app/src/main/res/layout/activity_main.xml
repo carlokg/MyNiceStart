@@ -5,6 +5,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/paleta4">
 
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/fotoloco"
+        android:scaleType="fitStart"
+        android:layout_marginLeft="156dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
@@ -13,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:text="@string/btnOk"
         android:layout_marginLeft="148dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="296dp"
         android:backgroundTint="@color/colorBtn"
         android:onClick="ok">
 

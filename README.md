@@ -1,6 +1,7 @@
 #NiceStart
 
-[carlok en github] (https://github.com/carlokg/)
+[carlok en github](https://github.com/carlokg/)
+
 **italic**
 
 * elemento1
