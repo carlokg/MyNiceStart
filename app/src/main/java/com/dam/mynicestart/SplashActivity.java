@@ -11,6 +11,13 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ * @author Carlos
+ * Clase para el spalash de la aplicación, carga imagen y el fondo
+ * de forma progresiva, dará paso a la pantalla de login
+ * @see LoginActivity
+ */
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override

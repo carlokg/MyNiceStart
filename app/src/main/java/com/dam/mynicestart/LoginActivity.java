@@ -10,6 +10,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
+/**
+ * @author Carlos
+ * Clase para el login de la aplicación, en el que introducir credenciales
+ * y cargara mediante un Inten la siguiente ventana al logearse
+ * MainActivity o registro
+ * @see LoginActivity
+ */
 
 public class LoginActivity extends AppCompatActivity {
     ImageView mForest;
