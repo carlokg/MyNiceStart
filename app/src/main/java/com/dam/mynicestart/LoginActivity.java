@@ -12,11 +12,15 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 /**
  * @author Carlos
- * Clase para el login de la aplicación, en el que introducir credenciales
- * y cargara mediante un Inten la siguiente ventana al logearse
- * MainActivity o registro
- * @see LoginActivity
+ * Clase para el login de la aplicación, en el que introducir credenciales,
+ * si pulsa el boton "login", pasara al primer activity (activity_main)
+ * Si se pulsa el link de registro, pasará al activity de registro
+ * @see MainActivity
+ * @see Registro
+ *
+
  */
+
 
 public class LoginActivity extends AppCompatActivity {
     ImageView mForest;

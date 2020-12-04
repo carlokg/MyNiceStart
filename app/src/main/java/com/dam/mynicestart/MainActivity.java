@@ -1,5 +1,6 @@
 package com.dam.mynicestart;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,6 +15,13 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
  * @author Carlos
  * MainActivity
  *
+ * Clase que carga imagen de usuario utilizando Gilde
+ *  Si se pulsa aceptar, llevará al MainActivity 2,
+ *  Siguiente pantaya de la aplicación
+ *  Si se pulsa el boton del teléfono volver,
+ *  saldrá de la app, al no pasar por login o splash
+ *
+ *  @see MainActivity2
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -24,15 +32,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imgLogin = findViewById(R.id.imageView);
+        imgLogin = findViewById(R.id.imgLogin);
 
         Glide.with(this)
                 .load(R.drawable.loco)
-                .centerCrop()
                 .circleCrop()
                 .into(imgLogin)
-                ;
-
+        ;
     }
 
 

@@ -13,8 +13,12 @@ import android.widget.TextView;
 
 /**
  * @author Carlos
+ * SplashActivity
+
  * Clase para el spalash de la aplicación, carga imagen y el fondo
- * de forma progresiva, dará paso a la pantalla de login
+ * de forma progresiva cambiando la iluminación de color,
+ * dará paso a la pantalla de login
+ *
  * @see LoginActivity
  */
 
