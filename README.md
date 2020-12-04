@@ -1,10 +1,17 @@
-#NiceStart
+#**MyNiceStart**
 
 [carlok en github](https://github.com/carlokg/)
 
-**italic**
 
-* elemento1
-    *subelemento1
+
+* Splash
+* Login
+  * Registro
+    *  Activity principal
+    *  Activity 2
+
+
+*    Capturas de la app:
 
 ![](img/splash.png) | ![](img/login.png) | ![](img/register.png) | ![](img/act.png) | ![](img/act2.png)
+
