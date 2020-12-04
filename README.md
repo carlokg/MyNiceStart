@@ -7,4 +7,4 @@
 * elemento1
     *subelemento1
 
-![](img/splash.png) || [](img/login.png) || [](img/register.png)
+![](img/splash.png) | ![](img/login.png) | ![](img/register.png)
