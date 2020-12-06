@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         imgLogin = findViewById(R.id.imgLogin);
 
         Glide.with(this)
-                .load(R.drawable.loco)
+                .load(R.drawable.fotolog)
                 .circleCrop()
                 .into(imgLogin)
         ;
