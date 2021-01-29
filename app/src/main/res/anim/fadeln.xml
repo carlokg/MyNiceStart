@@ -17,7 +17,6 @@
         android:duration="2000"
         android:fromAlpha="0"
         android:startOffset = "500"
-
         android:toAlpha="1.1"
         />
 

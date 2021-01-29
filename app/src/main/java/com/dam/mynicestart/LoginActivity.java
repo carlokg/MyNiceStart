@@ -34,10 +34,10 @@ public class LoginActivity extends AppCompatActivity {
         mForest= findViewById(R.id.imageView);
 
         Glide.with(this)
-                .load(R.drawable.chica)
-                .centerCrop()
+                .load(R.drawable.chica) //SIEMPRE
+                .centerCrop()//Para centrar
                 .transition(DrawableTransitionOptions.withCrossFade(500))
-                .into(mForest);
+                .into(mForest); //SIEMPRE
 
     }
     public void register(View view) {

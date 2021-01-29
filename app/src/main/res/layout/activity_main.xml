@@ -3,7 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/paleta4">
+    android:background="@color/paleta4"
+    android:id="@+id/activity_main_context">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/taporswipetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/paleta1"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        app:animationDuration="300"
+        app:expandOnClick="true"
+        app:icon="@drawable/love"
+        app:inner_view="@layout/expandable_view"
+        app:startExpanded="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:title="Passengers" />
 
     <TextView
         android:id="@+id/textView"
