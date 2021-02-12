@@ -1,10 +1,12 @@
 package com.dam.mynicestart;
 
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -18,7 +20,6 @@ import android.widget.Toast;
 
 import com.alespero.expandablecardview.ExpandableCardView;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.google.android.material.snackbar.Snackbar;
 
 /**
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 .circleCrop()                                           //Para que sea redondo
                 .into(imgLogin)
         ;
+
     }
     protected SwipeRefreshLayout.OnRefreshListener mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
@@ -121,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast toast2 = Toast.makeText(this, "Deleting Avatar", Toast.LENGTH_LONG);
                 toast2.show();
                 break;
+
         }
         return super.onContextItemSelected(item);
     }
@@ -145,6 +148,9 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(this,"going APPBAR SEARCH",Toast.LENGTH_LONG );
             toast.show();
         }
+        if (id == R.id.action_settings2) {
+            showAlertDialogButtonClicked(MainActivity.this);
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -152,4 +158,49 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, MainActivity2.class);
         startActivity(i);
     }
+
+    public void showAlertDialogButtonClicked(MainActivity view) {
+        // setup the alert builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        //el dialogo estandar tiene título/icono pero podemos sustituirlo
+        //por un XML a medida
+        // builder.setTitle("Achtung!");
+        // builder.setMessage("Where do you go?");
+        // builder.setIcon(R.drawable.ic_action_name_dark);
+        // un XML a medida para el diálogo:
+
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view,
+                null));
+
+        // add the buttons
+        builder.setPositiveButton(R.string.cerrar_dialogo, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do something like...
+                        dialog.dismiss();
+                    }
+                });
+        builder.setNegativeButton(R.string.cerrar_dialogo, new
+                DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do something like...
+                        dialog.dismiss();
+                    }
+                });
+
+        builder.setNeutralButton(R.string.cerrar_dialogo, new
+                DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do something like...
+                        dialog.dismiss();
+                    }
+                });
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+
 }
