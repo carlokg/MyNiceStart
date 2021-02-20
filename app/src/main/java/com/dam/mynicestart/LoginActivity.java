@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-
 /**
  * @author Carlos
  * Clase para el login de la aplicación, en el que introducir credenciales,
@@ -17,10 +16,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
  * Si se pulsa el link de registro, pasará al activity de registro
  * @see MainActivity
  * @see Registro
- *
-
  */
-//a
 
 public class LoginActivity extends AppCompatActivity {
     ImageView mForest;
@@ -34,10 +30,10 @@ public class LoginActivity extends AppCompatActivity {
         mForest= findViewById(R.id.imageView);
 
         Glide.with(this)
-                .load(R.drawable.chica)
-                .centerCrop()
+                .load(R.drawable.chica) //SIEMPRE
+                .centerCrop()//Para centrar
                 .transition(DrawableTransitionOptions.withCrossFade(500))
-                .into(mForest);
+                .into(mForest); //SIEMPRE
 
     }
     public void register(View view) {

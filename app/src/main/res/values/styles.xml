@@ -9,7 +9,6 @@
     </style>
 
     <style name="NoActionThem" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-
         <item name="colorPrimaryDark">@color/paletaB</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
