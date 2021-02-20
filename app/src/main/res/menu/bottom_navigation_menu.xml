@@ -20,21 +20,21 @@
     <item
       android:id="@+id/bottom_nav_favorites"
       android:title="@string/bottom_nav_favorites_title"
-      android:icon="@drawable/ic_favorite_on_surface_24dp"/>
+      android:icon="@drawable/ic_favorite"/>
 
     <item
       android:id="@+id/bottom_nav_music"
       android:title="@string/bottom_nav_music_title"
-      android:icon="@drawable/ic_music_note_on_surface_24dp"/>
+      android:icon="@drawable/ic_music"/>
 
     <item
       android:id="@+id/bottom_nav_places"
       android:title="@string/bottom_nav_places_title"
-      android:icon="@drawable/ic_place_on_surface_24dp"/>
+      android:icon="@drawable/ic_place"/>
 
     <item
       android:id="@+id/bottom_nav_news"
       android:title="@string/bottom_nav_news_title"
-      android:icon="@drawable/ic_news_on_surface_24dp"/>
+      android:icon="@drawable/ic_news"/>
 
 </menu>
